@@ -18,8 +18,8 @@ const App = () => {
             <a className='quantity__minus' title='Decrement' onClick={()=> dispatch(decNumber())}>
               <span>-</span>
             </a>
-            <input name='quantity' type='text' className='quantity__input' value={myState} />
-            <a className='quantity__plus' title='Increment' onClick={()=>dispatch(incNumber())}>
+            <input name='quantity' type='text' className='quantity__input' readOnly value={myState} />
+            <a className='quantity__plus' title='Increment' onClick={()=>dispatch(incNumber(1))}>
               <span>+</span>
             </a>
           </div>
